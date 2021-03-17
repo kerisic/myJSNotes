@@ -13,10 +13,10 @@ const noteListBox = document.querySelector("#notes-container");
 
 // define and group eventlisteners
 function eventListeners() {
-  document.addEventListener("DOMContentLoaded", displayNotes);
-  noteListBox.addEventListener("click", deleteNote);
-  makeURLChangeShowNoteForCurrentPage();
-  addNewNoteListener()
+  document.addEventListener("DOMContentLoaded", displayNotes);   // display existing notes when document is ready
+  noteListBox.addEventListener("click", deleteNote);             // delete note when delete button is clicked
+  makeURLChangeShowNoteForCurrentPage();                         // change display of note when specific note link is clicked
+  addNewNoteListener()                                           // add and create note object/html when submit button is clicked
 }
 
 // invoke eventlisteners 
@@ -49,7 +49,6 @@ function createNote(note) {
   div.innerHTML = `                                                 
            <a href="#${note.id}">${note.body.substring(0, 20)}</a>
            <button type = "button" class = "btn delete-note-btn">
-           <span><i class = "fas fa-trash"></i></span>
            Delete
            </buttton>
     `;

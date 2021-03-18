@@ -1,6 +1,6 @@
 # Javascript Notes App
 
-<img src="https://user-images.githubusercontent.com/71288920/111697883-0e9d6000-882e-11eb-97d1-5d9d270d68d5.gif" width="400" border="1">
+<img src="https://user-images.githubusercontent.com/71288920/111700580-7f924700-8831-11eb-9b5c-fa39d1e5ad51.gif" width="400" border="1">
 
 ## Requirements
 ```

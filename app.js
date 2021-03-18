@@ -109,5 +109,20 @@ function showNote(noteID) {                                  // show the body of
     return item.id === noteID
   });
   document.getElementById("note")
-  .innerHTML = `${note[0].body}`
+  emojify(note);
 }
+
+function emojify(note) {
+  fetch('https://makers-emojify.herokuapp.com/', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({text: `${note[0].body}`
+      })
+    })
+    .then((response) => {
+      return response.json()
+    }).then(jsonresponse => { document.getElementById('note').innerHTML = `${jsonresponse.emojified_text}`})
+  }

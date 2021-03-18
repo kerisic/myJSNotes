@@ -3,25 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <h1>noTe aPP</h1>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-
   <body>
+    <div id="header">
+      <h1>My very own notebook</h1>
+    </div>
+    <div id="form">
     <form>
-      <textarea rows="1" cols="16" name="title" placeholder="title"></textarea>
-      <br />
       <textarea
         rows="10"
         cols="16"
         name="content"
-        placeholder="note content"
+        placeholder="Write your note here"
       ></textarea>
       <br />
-      <button id="bttn">Submit</button>
+      <a href="https://www.webfx.com/tools/emoji-cheat-sheet/"
+        >Emojis you can use in your note!</a
+      >
+      <br />
+      <br />
+      <button id="bttn">Save</button>
     </form>
-
-    <div id="notes-container"></div>
-    <div id="note"></div>
+    <br />
+  </div>
+    <div id="display">
+      Saved notes
+      <div id="notes-container"></div>
+      <div id="note"></div>
+    </div>
     <script src="app.js" defer></script>
     <script src="testing-framework.js" defer></script>
   </body>

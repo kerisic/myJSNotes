@@ -1,0 +1,79 @@
+* {
+  background-color: rgb(255, 255, 255);
+}
+#header {
+  margin: 0 auto;
+  margin-left: auto;
+}
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+#notes-container {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: rgb(219, 135, 135);
+  text-align: left;
+}
+#note {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+button > * {
+  pointer-events: none;
+  border-radius: 10px;
+}
+textarea {
+  border-radius: 10px;
+  width: 300px;
+  outline-color: #00000041;
+  padding-left: 10px;
+}
+.btn {
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+  text-decoration: underline;
+}
+a:visited {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+#bttn {
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(59, 59, 59);
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+#display {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-style: solid;
+  border-color: #000000a4;
+  border-width: 1px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
